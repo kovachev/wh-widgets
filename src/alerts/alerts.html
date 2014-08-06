@@ -1,0 +1,21 @@
+﻿<div class="alerts-boxes">
+    <div class="alert-box"
+         ng-class="item.type"
+         ng-repeat="item in alerts"
+         ng-click="alertClose(item)"
+         ng-style="getStyle(item)">
+        <div class="ab-icon" ng-if="item.icon">
+            <i ng-class="item.icon"></i>
+        </div>
+        <div ng-class="{'sb-text-icon': item.icon, 'sb-text': !item.icon}">
+            <span>
+                {{item.title}}
+            </span>
+            <p ng-if="item.content" ng-bind-html="item.content">
+            </p>
+        </div>
+        <div class="ab-small-icon" ng-if="item.smallIcon">
+            <i ng-class="item.smallIcon"></i>
+        </div>
+    </div>
+</div>

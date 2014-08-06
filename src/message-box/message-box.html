@@ -1,0 +1,19 @@
+﻿<div class="message-box" ng-if="messageBox != null">
+    <div class="message-box-content">
+        <div class="message-box-inner">
+            <span>
+                {{messageBox.title}}
+            </span>
+            <p ng-bind-html="messageBox.content">
+            </p>
+            <div class="message-box-buttons">
+                <button class="btn btn-sm" title="{{button.title}}"
+                        ng-class="button.css"
+                        ng-click="close(messageBox, button)"
+                        ng-repeat="button in messageBox.buttons">
+                    {{button.label}}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

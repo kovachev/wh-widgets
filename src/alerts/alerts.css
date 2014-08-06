@@ -1,0 +1,151 @@
+﻿/* ========================================= */
+/* == Alerts =============================== */
+
+.alerts-boxes {
+    position: fixed;
+    right: 0;
+    top: 20px;
+    z-index: 10000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.alert-box {
+    position: relative;
+    right: 10px;
+    top: 0;
+    width: 415px;
+    color: #ffffff;
+    z-index: 11000;
+    overflow: hidden;
+    border: 2px solid transparent;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+    .alert-box:hover {
+        border: 2px solid #ffffff;
+        border: 2px solid rgba(255, 255, 255, 0.6);
+        cursor: pointer;
+    }
+
+    .alert-box .sb-text-icon {
+        width: 73%;
+        margin: 3px 0;
+        display: inline-block;
+    }
+
+    .alert-box .sb-text {
+        width: 92%;
+        padding-left: 20px;
+        display: inline-block;
+    }
+
+    .alert-box span {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        display: block;
+        margin: 4px 0;
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        -o-user-select: text;
+        user-select: text;
+    }
+
+    .alert-box p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        margin-top: 2px;
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        -o-user-select: text;
+        user-select: text;
+    }
+
+    .alert-box .ab-icon {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 50px;
+        padding: 0 4px;
+    }
+
+    .alert-box .ab-small-icon {
+        position: absolute;
+        font-size: 20px;
+        bottom: 2px;
+        right: 4px;
+    }
+
+    /* ========================================= */
+    /* == Alerts Colors ======================== */
+
+    .alert-box.success {
+        background-color: #47a447;
+        /*background-color: #5cb85c;*/
+        /*background-color: #739e73;*/
+    }
+
+    .alert-box.info {
+        background-color: #3276b1;
+        /*background-color: #428bca;*/
+    }
+
+    .alert-box.warning {
+        /*background-color: #f0ad4e;*/
+        background-color: #ed9c28;
+        /*background-color: #c79121;*/
+    }
+
+    .alert-box.danger {
+        background-color: #d9534f;
+        /*background-color: #d2322d;*/
+        /*background-color: #c46a69;*/
+    }
+
+    /* ========================================= */
+    /* == Alerts Animations ==================== */
+
+    .alert-box.ng-animate {
+        -webkit-animation-duration: .4s;
+        -moz-animation-duration: .4s;
+        -ms-animation-duration: .4s;
+        -o-animation-duration: .4s;
+        animation-duration: .4s;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-transition-timing-function: ease-in-out;
+        -moz-transition-timing-function: ease-in-out;
+        -ms-transition-timing-function: ease-in-out;
+        -o-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
+    }
+
+    .alert-box.ng-enter {
+        -webkit-animation-name: fadeInRight;
+        -moz-animation-name: fadeInRight;
+        -ms-animation-name: fadeInRight;
+        -o-animation-name: fadeInRight;
+        animation-name: fadeInRight;
+    }
+
+    .alert-box.ng-leave {
+        -webkit-animation-duration: .8s;
+        -moz-animation-duration: .8s;
+        -ms-animation-duration: .8s;
+        -o-animation-duration: .8s;
+        animation-duration: .8s;
+        -webkit-animation-name: fadeOutHeigth;
+        -moz-animation-name: fadeOutHeigth;
+        -ms-animation-name: fadeOutHeigth;
+        -o-animation-name: fadeOutHeigth;
+        animation-name: fadeOutHeigth;
+    }

@@ -1,0 +1,198 @@
+﻿/* ========================================= */
+/* == Notifications ======================== */
+
+.notifications-icons {
+    position: fixed;
+    width: 415px;
+    right: 10px;
+    bottom: 180px;
+    z-index: 9999;
+    float: right;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.notification-icon {
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px 4px;
+    color: #ffffff;
+    float: right;
+    cursor: pointer;
+    display: block;
+    background-color: #ffffff;
+    font-size: 17px;
+    margin-left: 4px;
+    margin-top: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    border: 2px solid transparent;
+}
+
+    .notification-icon:hover {
+        border-color: #ffffff;
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .notification-icon:active {
+        top: 1px;
+        left: 1px;
+        position: relative;
+    }
+
+.notification-box {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: #428bca;
+    padding: 10px 10px 5px 10px;
+    width: 390px;
+    height: 150px;
+    color: #ffffff;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    box-sizing: content-box;
+    border-left: 5px solid #000000;
+    border-left: 5px solid rgba(0,0,0,.15);
+    overflow: hidden;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+    .notification-box .nb-close {
+        position: absolute;
+        right: 10px;
+        height: 16px;
+        width: 15px;
+        cursor: pointer;
+        font-size: 18px;
+        -ms-opacity: .5;
+        opacity: .5;
+        display: block;
+        top: 15px;
+    }
+
+        .notification-box .nb-close:hover {
+            -ms-opacity: 1;
+            opacity: 1;
+        }
+
+    .notification-box .nb-icon {
+        font-size: 30px;
+        text-align: left;
+        position: absolute;
+        top: 120px;
+        left: 6px;
+        z-index: 0;
+    }
+
+    .notification-box span {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        font-weight: normal;
+        padding: 5px 0 !important;
+        display: block;
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        -o-user-select: text;
+        user-select: text;
+    }
+
+    .notification-box p {
+        display: block;
+        height: 75px;
+        overflow-y: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: normal;
+        margin-top: 8px;
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        -o-user-select: text;
+        user-select: text;
+    }
+
+    /* ========================================= */
+    /* == Notifications Colors ================= */
+
+    .notification-icon.success,
+    .notification-box.success {
+        background-color: #47a447;
+        /*background-color: #5cb85c;*/
+        /*background-color: #739e73;*/
+    }
+
+    .notification-icon.info,
+    .notification-box.info {
+        background-color: #3276b1;
+        /*background-color: #428bca;*/
+    }
+
+    .notification-icon.warning,
+    .notification-box.warning {
+        /*background-color: #f0ad4e;*/
+        background-color: #ed9c28;
+        /*background-color: #c79121;*/
+    }
+
+    .notification-icon.danger,
+    .notification-box.danger {
+        background-color: #d9534f;
+        /*background-color: #d2322d;*/
+        /*background-color: #c46a69;*/
+    }
+
+
+    /* ========================================= */
+    /* == Notifications Animations ============= */
+
+    .notification-icon.ng-animate,
+    .notification-box.ng-animate {
+        -webkit-animation-duration: .6s;
+        -moz-animation-duration: .6s;
+        -ms-animation-duration: .6s;
+        -o-animation-duration: .6s;
+        animation-duration: .6s;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    .notification-icon.ng-enter,
+    .notification-box.ng-enter {
+        -webkit-animation-name: fadeIn;
+        -moz-animation-name: fadeIn;
+        -ms-animation-name: fadeIn;
+        -o-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+
+    .notification-icon.ng-leave,
+    .notification-box.ng-leave {
+        -webkit-animation-duration: .4s;
+        -moz-animation-duration: .4s;
+        -ms-animation-duration: .4s;
+        -o-animation-duration: .4s;
+        animation-duration: .4s;
+        -webkit-animation-name: fadeOut;
+        -moz-animation-name: fadeOut;
+        -ms-animation-name: fadeOut;
+        -o-animation-name: fadeOut;
+        animation-name: fadeOut;
+    }

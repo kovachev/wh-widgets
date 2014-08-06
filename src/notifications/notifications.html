@@ -1,0 +1,23 @@
+﻿<div class="notifications-icons">
+    <div class="notification-icon"
+         ng-class="item.type"
+         ng-repeat="item in notifications"
+         ng-click="setActive(item)"
+         ng-style="getStyle(item)">
+        <i ng-class="item.icon"></i>
+    </div>
+</div>
+<div class="notification-box"
+     ng-class="item.type"
+     ng-repeat="item in notifications | filter:{active: true}:strict"
+     ng-style="getStyle(item)">
+    <i class="fa fa-fw fa-times nb-close" ng-click="close(item)"></i>
+    <span>
+        {{item.title}}
+    </span>
+    <p ng-bind-html="item.content">
+    </p>
+    <div class="nb-icon">
+        <i ng-class="item.icon"></i>
+    </div>
+</div>
