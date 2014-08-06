@@ -1,36 +1,37 @@
-wh-widgets [![License][license-image]][license-url]
+wh-widgets
 ==========================
 
 A set of widgets for [AngularJS](http://angularjs.org/)
 
-Includes:
-    * Notifications
-    * Alerts
-    * Message Box
+Available widgets:
+*Alerts
+*Notifications
+*Message Box
 
 Demo could be found [here](http://kovachev.github.io/wh-widgets/).
 
 ##Dependencies:
 
 1. [AngularJS](http://angularjs.org/)
-1. [Bootstrap](http://getbootstrap.com/)
-1. [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+2. [Bootstrap](http://getbootstrap.com/)
+3. [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 
 ##Usage:
 
-1. Add **whWidgets.alerts**, **whWidgets.message-box** and/or **whWidgets.notifications** to your `AngularJS` application dependencies.
+Add **whWidgets.alerts**, **whWidgets.message-box** and/or **whWidgets.notifications** to your `AngularJS` application dependencies.
+
 ```javascript
 // Create the DemoApp module
 angular.module('DemoApp', [
     ...
-    'whWidgets.alerts', 
-    'whWidgets.message-box', 
+    'whWidgets.alerts',
+    'whWidgets.message-box',
     'whWidgets.notifications',
     ...
 ]);
 ```
 
-2. Add the placeholders in your `html`
+Add the `placeholders` (widgets directives) in your `html`
 ```html
 <body>
     ...
@@ -43,8 +44,12 @@ angular.module('DemoApp', [
 </body>
 ```
 
-3. Using the widgets
-  3.1 Alerts: Add `AlertsService` to the target controller injected dependencies. To show an alert call `AlertsService.showAlert(alert)`.
+####Using the widgets:
+
+**Alerts**:
+Add `AlertsService` to the target controller injected dependencies.
+To show an alert call `AlertsService.showAlert(alert)`.
+
 ```javascript
 AlertsService.showAlert({
     title: 'Demo',
@@ -60,7 +65,10 @@ AlertsService.showAlert({
 });
 ```
 
- 3.2 Notification: Add `NotificationsService` to the target controller injected dependencies. To show an alert call `NotificationsService.showNotification(notification)`.
+**Notification**:
+Add `NotificationsService` to the target controller injected dependencies.
+To show an alert call `NotificationsService.showNotification(notification)`.
+
 ```javascript
 NotificationsService.showNotification({
     title: 'Demo',
@@ -79,7 +87,10 @@ NotificationsService.showNotification({
 });
 ```
 
- 3.3 Message Box: Add `MessageBoxService` to the target controller injected dependencies. To show an alert call `MessageBoxService.showMessageBox(messageBox)`.
+ **Message Box**
+Add `MessageBoxService` to the target controller injected dependencies.
+To show an alert call `MessageBoxService.showMessageBox(messageBox)`.
+
 ```javascript
 MessageBoxService.showMessageBox({
     title: 'Demo',
