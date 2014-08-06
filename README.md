@@ -4,9 +4,9 @@ wh-widgets
 A set of widgets for [AngularJS](http://angularjs.org/)
 
 Available widgets:
-* Alerts
-* Notifications
-* Message Box
+* [Alerts](#alerts)
+* [Notifications](#notifications)
+* [Message Box](#message-box)
 
 Demo could be found [here](http://kovachev.github.io/wh-widgets/).
 
@@ -65,7 +65,7 @@ AlertsService.showAlert({
 });
 ```
 
-####Notification:
+####Notifications:
 Add `NotificationsService` to the target controller injected dependencies.
 To show a notification call `NotificationsService.showNotification(notification)`.
 
