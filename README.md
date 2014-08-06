@@ -46,7 +46,7 @@ Add the `placeholders` (widgets directives) in your `html`
 
 ##Using the widgets:
 
-####**Alerts:**
+####Alerts:
 Add `AlertsService` to the target controller injected dependencies.
 To show an alert call `AlertsService.showAlert(alert)`.
 
@@ -65,7 +65,7 @@ AlertsService.showAlert({
 });
 ```
 
-####**Notification:**
+####Notification:
 Add `NotificationsService` to the target controller injected dependencies.
 To show a notification call `NotificationsService.showNotification(notification)`.
 
@@ -87,7 +87,7 @@ NotificationsService.showNotification({
 });
 ```
 
-####**Message Box:**
+####Message Box:
 Add `MessageBoxService` to the target controller injected dependencies.
 To show a message box call `MessageBoxService.showMessageBox(messageBox)`.
 
