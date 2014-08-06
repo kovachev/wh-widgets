@@ -45,19 +45,19 @@
                         switch (alert.type)
                         {
                             case 'success':
-                                alert.smallIcon = 'fa-check-circle';
+                                alert.smallIcon = 'fa fa-fw fa-check-circle';
                                 break;
 
                             case 'warning':
-                                alert.smallIcon = 'fa-exclamation-triangle';
+                                alert.smallIcon = 'fa fa-fw fa-exclamation-triangle';
                                 break;
 
                             case 'danger':
-                                alert.smallIcon = 'fa-times-circle';
+                                alert.smallIcon = 'fa fa-fw fa-times-circle';
                                 break;
 
                             default:
-                                alert.smallIcon = 'fa-exclamation-circle';
+                                alert.smallIcon = 'fa fa-fw fa-exclamation-circle';
                                 break;
                         }
                     }

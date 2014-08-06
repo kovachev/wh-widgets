@@ -48,19 +48,19 @@
                         switch (notification.type)
                         {
                             case 'success':
-                                notification.icon = 'fa-check-circle';
+                                notification.icon = 'fa fa-fw fa-check-circle';
                                 break;
 
                             case 'warning':
-                                notification.icon = 'fa-exclamation-triangle';
+                                notification.icon = 'fa fa-fw fa-exclamation-triangle';
                                 break;
 
                             case 'danger':
-                                notification.icon = 'fa-times-circle';
+                                notification.icon = 'fa fa-fw fa-times-circle';
                                 break;
 
                             default:
-                                notification.icon = 'fa-exclamation-circle';
+                                notification.icon = 'fa fa-fw fa-exclamation-circle';
                                 break;
                         }
                     }

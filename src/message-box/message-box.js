@@ -42,7 +42,7 @@
                         button = {
                             label: 'Close',
                             title: 'Close this message.',
-                            css: 'btn-default',
+                            css: 'btn btn-default',
                             onClick: _public.closeMessageBox
                         };
 
@@ -71,7 +71,7 @@
                                 button.title = button.label;
 
                             if (typeof button.css !== "string")
-                                button.css = 'btn-default';
+                                button.css = 'btn btn-default';
 
                             messageBox.buttons.push(button);
                         }
