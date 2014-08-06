@@ -1,0 +1,99 @@
+﻿/* ========================================= */
+/* == Message Box ========================== */
+
+.message-box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+    background: rgba(0,0,0,.6);
+    z-index: 100000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.message-box-content {
+    top: 35%;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    background-color: #232323;
+    background-color: rgba(0,0,0,.8);
+    padding: 20px;
+}
+
+.message-box-inner {
+    position: relative;
+    left: 20%;
+    width: 60%;
+}
+
+    .message-box-inner span {
+        font-size: 24px;
+        font-weight: 300;
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        -o-user-select: text;
+        user-select: text;
+    }
+
+    .message-box-inner p {
+        margin: 0 0 9px;
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        -o-user-select: text;
+        user-select: text;
+    }
+
+.message-box-buttons {
+    width: 100%;
+    height: 30px;
+}
+
+    .message-box-buttons button {
+        float: right;
+        margin-right: 7px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+/* ========================================= */
+/* == Message Box Animations =============== */
+
+.message-box.ng-animate {
+    -webkit-animation-duration: .6s;
+    -moz-animation-duration: .6s;
+    -ms-animation-duration: .6s;
+    -o-animation-duration: .6s;
+    animation-duration: .6s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.message-box.ng-enter {
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -ms-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.message-box.ng-leave {
+    -webkit-animation-name: fadeOut;
+    -moz-animation-name: fadeOut;
+    -ms-animation-name: fadeOut;
+    -o-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
