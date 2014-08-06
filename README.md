@@ -4,9 +4,9 @@ wh-widgets
 A set of widgets for [AngularJS](http://angularjs.org/)
 
 Available widgets:
-*Alerts
-*Notifications
-*Message Box
+* Alerts
+* Notifications
+* Message Box
 
 Demo could be found [here](http://kovachev.github.io/wh-widgets/).
 
